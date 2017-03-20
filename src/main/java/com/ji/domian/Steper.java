@@ -10,7 +10,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 
 /**
- * Title:
+ * Title:秒级轮询
  * Description:
  * Author:吉
  * Since:2017/3/17

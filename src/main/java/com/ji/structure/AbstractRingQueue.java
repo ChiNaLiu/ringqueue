@@ -4,7 +4,7 @@ import com.ji.domian.StepSlot;
 import com.ji.domian.Task;
 
 /**
- * Title:
+ * Title:抽象环形队列
  * Description:
  * Author:吉
  * Since:2017/3/17

@@ -7,7 +7,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Title:
+ * Title:环形队列
  * Description:
  * Author:吉
  * Since:2017/3/17
