@@ -4,7 +4,6 @@ import com.ji.structure.AbstractRingQueue;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Title:环形队列
@@ -15,10 +14,12 @@ import java.util.concurrent.TimeUnit;
  */
 public class RingQueue extends AbstractRingQueue {
 
-    private ScheduledExecutorService stepPool = Executors.newScheduledThreadPool(10);
+    private ScheduledExecutorService stepPool = Executors.newScheduledThreadPool(1);
+
 
     public RingQueue() {
         super();
+
     }
 
     @Override
@@ -48,7 +49,7 @@ public class RingQueue extends AbstractRingQueue {
     }
 
     public void start() {
-        stepPool.scheduleAtFixedRate(new Steper(this), 0, 1L, TimeUnit.SECONDS);
+        new Thread(new Steper(this)).start();
     }
 
 }
